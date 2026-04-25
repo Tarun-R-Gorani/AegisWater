@@ -9,7 +9,7 @@ st.set_page_config(page_title="AegisWater AI", page_icon="🛡️")
 # 2. Load the trained model
 @st.cache_resource
 def load_model():
-    return joblib.load('models/water_model.joblib')
+    return joblib.load('water_model.joblib')
 
 model = load_model()
 
