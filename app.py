@@ -60,7 +60,7 @@ CONTAMINATION_SOURCES = {
 # 3. Load Model Engine
 @st.cache_resource
 def load_model_bundle():
-    return joblib.load('models/rf_model.joblib')
+    return joblib.load('rf_model.joblib')
 
 bundle = load_model_bundle()
 
